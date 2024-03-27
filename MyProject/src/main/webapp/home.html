@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Form</title>
+
+<link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+<script>
+    function showBrowserInfo() {
+        var userAgent = navigator.userAgent;
+        alert("Browser Model: " + userAgent);
+    }
+</script>
+
+</head>
+
+<body class="container">
+    <div class="card" style="width: 550px; height:300px; margin: auto; margin-top: 50px">
+        <h2 class="bg-info text-light card-header">Register Form</h2>
+        <form class="form" action="UserRegister" method="post">
+            <table class="table table-info table-hover ">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="last_name"></td>
+                </tr>
+                
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+            
+                <tr>
+                    <td><button type="submit" onclick="showBrowserInfo()" class="btn btn-success">Submit</button></td>
+                </tr>
+               
+            </table>
+        </form>
+        
+    </div>
+</body>
+</html>
